@@ -4,6 +4,8 @@ import TodoForm from './Form/TodoForm'
 import TodoList from './List/TodoList'
 import { baseUrl } from '../../environments'
 
+// import ToList from '../Tolist/List/ToList'
+
 function Todo(props) {
 
     const URL = `${baseUrl}/todo`
@@ -82,6 +84,9 @@ function Todo(props) {
                 editDescription={editDescription}/>
                 {/* //usando apenas um função para editar */}
                 {/* changeTask={changeTask}/> */}
+                
+            {/* <ToList customers={customers}/> */}
+
         </>
     )
 }

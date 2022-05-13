@@ -16,14 +16,14 @@ function RegisterCustomer(props) {
     const [successRegister, SetSuccessRegister] = useState(false)
 
     const getStates = () => {
-        axios.get('http://localhost:8080/states')
+        axios.get('http://localhost:3001/states')
             .then((response) => {
                 setStates(response.data)
             })
     }
 
     const register = () => {
-        axios.post('http://localhost:8080/customer', customer)
+        axios.post('http://localhost:3001/customer', customer)
             .then((response) => {
                 SetSuccessRegister(true)
             })
